@@ -18,8 +18,8 @@ sudo chown -R ec2-user:ec2-user /etc/prometheus
 sudo mv prometheus /usr/local/bin/
 sudo chown ec2-user:ec2-user /usr/local/bin/prometheus
 # Create service file
-sudo nano /etc/systemd/system/prometheus.service
-cat << EOF >> /etc/systemd/system/prometheus.service
+sudo touch /etc/systemd/system/prometheus.service
+sudo cat << EOF >> /etc/systemd/system/prometheus.service
 [Unit]
 Description=Prometheus for AWS
 Wants=network-online.target
