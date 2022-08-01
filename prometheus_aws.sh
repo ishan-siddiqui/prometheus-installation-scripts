@@ -20,7 +20,7 @@ sudo chown ec2-user:ec2-user /usr/local/bin/prometheus
 cd
 # Create service file
 sudo touch /etc/systemd/system/prometheus.service
-sudo cp /prometheus-installation-scripts/prometheus.service /etc/systemd/system/
+sudo cp prometheus-installation-scripts/prometheus.service /etc/systemd/system/
 
 # Reloading System
 sudo systemctl daemon-reload
